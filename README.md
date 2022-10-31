@@ -24,7 +24,7 @@ What you need to pay attention:
 - A "ready" process is awaiting execution on a CPU which is determined by computer scheduling. 
 - A blocked state transitions from a running state due to a lack of needed resources, but this resource does not include CPU time, which is converted from a running state to a ready state
 
-### Scheduling(调度算法)
+### CPU Scheduling(调度算法)
 1. First come, first served (FCFS)  
 Throughput can be low, because long processes can be holding the CPU, causing the short processes to wait for a long time (known as the convoy effect).  
 2. Shortest job first (SJF).   
@@ -38,3 +38,4 @@ The scheduler assigns a fixed time unit per process, and cycles through them. If
 The operating system assigns a fixed priority rank to every process, run in order of their priority.  
 To prevent the starvation of lower-priority processes, the system can gradually increments the priority of waiting processes and threads.  
 6. Multilevel queue scheduling
+A combination of Round-robin scheduling and fixed priority pre-emptive scheduling.
